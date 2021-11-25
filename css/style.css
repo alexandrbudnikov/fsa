@@ -735,6 +735,7 @@ template, [hidden] {
   font-family: "Roboto", sans-serif;
   color: #818181;
   padding-bottom: 55px;
+  flex-wrap: wrap;
 }
 
 .tabs__caption-one li {
@@ -1322,6 +1323,7 @@ template, [hidden] {
   font-family: "Roboto", sans-serif;
   color: #818181;
   padding-bottom: 28px;
+  flex-wrap: wrap;
 }
 
 .tabs__caption-two li {
@@ -1664,6 +1666,7 @@ template, [hidden] {
           justify-content: space-between;
           color: #909090;
   padding-bottom: 60px;
+  flex-wrap: wrap;
 }
 .tabs__caption-three li {
   cursor: pointer;
@@ -1673,6 +1676,7 @@ template, [hidden] {
   line-height: 13px;
   letter-spacing: 0.02em;
   position: relative;
+  padding-bottom: 5px;
 }
 .tabs__caption-three li:hover{
   color: #000000;
@@ -1812,6 +1816,7 @@ template, [hidden] {
       -ms-flex-pack: justify;
           color: #909090;
   margin-bottom: 19px;
+  flex-wrap: wrap;
 }
 
 .tabs__caption-four li {
@@ -2036,6 +2041,7 @@ template, [hidden] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           color: #909090;
