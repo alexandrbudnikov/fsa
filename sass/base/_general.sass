@@ -1,0 +1,106 @@
+@import vars
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $btn-color
+  color: #ffffff
+
+body
+  font-size: 17px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  overflow-x: hidden
+  color: $text
+  line-height: 17px
+  font-weight: 400
+  input, textarea
+    border: #666 1px solid
+    outline: none
+    &:focus:required:invalid
+      border-color: #ffffff
+    &:required:valid
+      border-color: green
+p, h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+
+b, strong
+  font-weight: bold
+
+a:hover, a:active, a:focus
+  color: inherit
+  text-decoration: none
+
+a
+  color: $text
+  text-decoration: none
+  +mt(.3s)
+  &:hover
+    color: darken($btn-color, 20%)
+
+a, li, button
+  outline: none!important
+
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+.hidden
+  display: none!important
+// ======= END TEMPLATE STYLES =======
+
+
+.btn-read
+  position: relative
+  font-size: 16px
+  font-weight: 300
+  display: inline-block
+  white-space: nowrap
+  padding-right: 25px
+  +mt(.3s)
+  box-shadow: none
+  border: none
+  cursor: pointer
+  color: $btn-color
+  text-align: center
+  line-height: normal
+  &::after
+    position: absolute
+    content: ''
+    width: 16px
+    height: 8px
+    background-image: url(../img/arrow__title.svg)
+    background-position: center center
+    background-size: contain
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+  &.disabled
+    filter: grayscale(.7)
+    pointer-events: none
+  &:focus, &:active, &:hover
+    color: darken($btn-color, 10%)
+
+
+.section__title
+  font-size: 36px
+  font-weight: 700
+  line-height: 135%
+  text-transform: uppercase
+  text-align: left
+  margin-bottom: 20px

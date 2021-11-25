@@ -1,0 +1,833 @@
+
+@import base/fonts
+@import base/vars
+
+
+@import base/mixins
+@import base/general
+
+
+
+
+
+
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+
+/* Document
+ * ==========================================================================
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+
+html
+  line-height: 1.15
+
+  /* 1
+  -webkit-text-size-adjust: 100%
+
+  /* 2
+
+/* Sections
+ * ==========================================================================
+
+/**
+ * Remove the margin in all browsers.
+
+body
+  margin: 0
+
+/**
+ * Render the `main` element consistently in IE.
+
+main
+  display: block
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+
+/* Grouping content
+ * ==========================================================================
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+
+hr
+  box-sizing: content-box
+
+  /* 1
+  height: 0
+
+  /* 1
+  overflow: visible
+
+  /* 2
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+
+pre
+  font-family: monospace, monospace
+
+  /* 1
+  font-size: 1em
+
+  /* 2
+
+/* Text-level semantics
+ * ==========================================================================
+
+/**
+ * Remove the gray background on active links in IE 10.
+
+a
+  background-color: transparent
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+
+abbr[title]
+  border-bottom: none
+
+  /* 1
+  text-decoration: underline
+
+  /* 2
+  text-decoration: underline dotted
+
+  /* 2
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+
+b, strong
+  font-weight: bolder
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+
+code, kbd, samp
+  font-family: monospace, monospace
+
+  /* 1
+  font-size: 1em
+
+  /* 2
+
+/**
+ * Add the correct font size in all browsers.
+
+small
+  font-size: 80%
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+
+sub, sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+
+sub
+  bottom: -0.25em
+
+sup
+  top: -0.5em
+
+/* Embedded content
+ * ==========================================================================
+
+/**
+ * Remove the border on images inside links in IE 10.
+
+img
+  border-style: none
+
+/* Forms
+ * ==========================================================================
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+
+button, input, optgroup, select, textarea
+  font-family: inherit
+
+  /* 1
+  font-size: 100%
+
+  /* 1
+  line-height: 1.15
+
+  /* 1
+  margin: 0
+
+  /* 2
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+
+button, input
+  /* 1
+  overflow: visible
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+
+button, select
+  /* 1
+  text-transform: none
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+
+button, [type="button"], [type="reset"], [type="submit"]
+  -webkit-appearance: button
+
+/**
+ * Remove the inner border and padding in Firefox.
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner
+  border-style: none
+  padding: 0
+
+/**
+ * Restore the focus styles unset by the previous rule.
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring
+  outline: 1px dotted ButtonText
+
+/**
+ * Correct the padding in Firefox.
+
+fieldset
+  padding: 0.35em 0.75em 0.625em
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+
+legend
+  box-sizing: border-box
+
+  /* 1
+  color: inherit
+
+  /* 2
+  display: table
+
+  /* 1
+  max-width: 100%
+
+  /* 1
+  padding: 0
+
+  /* 3
+  white-space: normal
+
+  /* 1
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+
+progress
+  vertical-align: baseline
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+
+textarea
+  overflow: auto
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+
+[type="checkbox"], [type="radio"]
+  box-sizing: border-box
+
+  /* 1
+  padding: 0
+
+  /* 2
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+
+[type="number"]
+  &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+    height: auto
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+
+[type="search"]
+  -webkit-appearance: textfield
+
+  /* 1
+  outline-offset: -2px
+
+  /* 2
+
+  &::-webkit-search-decoration
+    -webkit-appearance: none
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+
+\::-webkit-file-upload-button
+  -webkit-appearance: button
+
+  /* 1
+  font: inherit
+
+  /* 2
+
+/* Interactive
+ * ==========================================================================
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+
+details
+  display: block
+
+/*
+ * Add the correct display in all browsers.
+
+summary
+  display: list-item
+
+/* Misc
+ * ==========================================================================
+
+/**
+ * Add the correct display in IE 10+.
+
+template, [hidden]
+  display: none
+
+/**
+ * Add the correct display in IE 10.
+
+
+
+
+.container
+  width: 100%
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+
+@media (min-width: 480px)
+  .container
+    max-width: 540px
+
+@media (min-width: 768px)
+  .container
+    max-width: 720px
+
+@media (min-width: 992px)
+  .container
+    max-width: 960px
+
+@media (min-width: 1070px)
+  .container
+    max-width: 1040px
+
+@media (min-width: 1270px)
+  .container
+    max-width: 1440px
+
+
+
+
+
+.header
+  border-bottom: 1px solid #C4C4C4
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 19px 0
+    max-width: 1275px
+    margin: 0 auto
+
+.header__search
+  display: flex
+  align-items: center
+
+.header__search form 
+  background: #F2F2F2
+  border-radius: 100px
+  position: relative
+  min-width: 575px
+    
+
+.header__search form::placeholder 
+  font-size: 12px
+  color: #818181
+
+.header__search input, .header__search button 
+  border: none
+  outline: none
+  background: transparent
+
+.header__search input 
+  width: 100%
+  height: 38px
+  padding-left: 20px
+  color: $text
+  [type="search"]
+    color: #818181
+
+.header__search input::placeholder 
+  color: #818181
+
+.header__search button 
+  position: absolute
+  height: 16px
+  width: 16px
+  top: 50%
+  transform: translateY(-50%)
+  right: 12px
+  cursor: pointer
+  background-image: url(../img/search.svg)
+  background-repeat: no-repeat
+  background-position: center center
+
+
+.chat
+  margin-left: 10px
+  width: 38px
+  height: 38px
+  background: #F2F2F2
+  border-radius: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  position: relative
+  &__number
+    position: absolute
+    top: -4px
+    right: -2px
+    background-color: $btn-color
+    width: 16px
+    height: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #ffffff
+    font-family: $roboto-font
+    font-size: 12px
+    border-radius: 100%
+  svg
+    fill: #000000
+
+.user
+  cursor: pointer
+  display: flex
+  align-items: center
+  &__img
+    width: 60px
+    height: 60px
+    margin-right: 15px
+    img
+      max-width: 100%
+  &__wrap
+    margin-right: 30px
+  &__name
+    font-family: $suisse-font
+    font-size: 17px
+    margin-bottom: 2px
+  &__post
+    font-size: 12px
+    color: $text-no-active
+    letter-spacing: 0.02em
+
+
+
+
+
+.body
+  &__wrap
+    display: flex
+    justify-content: space-between
+  &__left
+    width: 300px
+    background-color: #F2F2F2
+    padding: 50px 40px 0 40px
+  &__right
+    width: 300px
+    background-color: #F2F2F2
+    padding: 50px 30px 0 40px 
+  &__main
+    width: 100%
+    background-color: #ffffff
+    padding: 0 60px
+    max-width: 830px
+
+
+.tabs__content 
+	display: none
+
+.tabs__content.active 
+	display: block
+.tabs
+  padding-top: 20px
+  &__caption
+    display: flex
+    justify-content: space-between
+    font-family: $roboto-font
+    color: $text-no-active
+    padding-bottom: 55px
+    li
+      cursor: pointer
+      padding-bottom: 4px
+      position: relative
+    li.active
+      color: #000000
+      &::after
+        position: absolute
+        bottom: 0
+        left: 0
+        content: ''
+        width: 100%
+        height: 3px
+        background-color: $btn-color
+
+
+.aside 
+  &__nav
+    li
+      cursor: pointer
+      position: relative
+      padding: 3.5px 0
+      margin-bottom: 25px
+      &:last-child
+        margin-bottom: 0
+      a
+        font-family: $roboto-font
+        color: $text-no-active
+      ul
+        max-height: 0
+        transition: .2s linear
+        display: flex
+        flex-direction: column
+        opacity: 0
+        visibility: hidden
+        padding-left: 28px
+        li
+          margin-bottom: 15px
+          &:last-child
+            margin-bottom: 0
+
+      &:hover
+        ul
+          max-height: 100px
+          opacity: 1
+          visibility: visible
+          margin-top: 29px
+    li.active > a
+      color: #000000
+      padding-left: 12px
+      &:after
+        position: absolute
+        left: 0
+        top: 0
+        content: ""
+        height: 100%
+        width: 3px
+        background-color: $btn-color
+  &__tabs
+    display: flex
+    flex-direction: column
+    row-gap: 12px
+    margin-top: 65px
+    &-icon
+      background: #000000
+      @include masks
+      width: 16px
+      height: 16px
+      margin-right: 8px
+      flex-shrink: 0
+      &.quest
+        mask: url(../img/quest.svg)
+      &.tel
+        mask: url(../img/tel.svg)
+      &.tech
+        mask: url(../img/tech-support.svg)
+      &.books
+        mask: url(../img/books.png)
+    li
+      background: #FFFFFF
+      border-radius: 6px
+      height: 40px
+      display: flex
+      align-items: center
+      padding-left: 14px
+      width: 100%
+      font-family: $roboto-font
+      font-size: 12px
+      color: #000000
+      cursor: pointer
+      position: relative
+      overflow: hidden
+      &.active
+        &::after
+          position: absolute
+          content: ""
+          left: 0
+          top: 0
+          height: 100%
+          width: 5px
+          background-color: $btn-color
+        .aside__tabs-icon
+          background: $btn-color
+
+
+.article
+  &__big
+    padding-bottom: 30px
+    border-bottom: 1px solid $btn-color
+    display: flex
+    justify-content: space-between
+    margin-bottom: 20px
+    &-img
+      background-repeat: no-repeat
+      background-size: cover
+      width: 340px
+      height: 205px
+      background-position: center center
+      position: relative
+      margin-right: 20px
+    &-title
+      width: calc(100% - 340px)
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      h2
+        font-size: 22px
+        line-height: 26px
+        margin-bottom: 30px
+    &-data
+      position: absolute
+      left: 22px
+      top: 10px
+      background: rgba(255, 255, 255, 0.05)
+      box-shadow: inset 0px -18px 160px rgba(255, 255, 255, 0.1), inset 0px -4px 20.3105px rgba(255, 255, 255, 0.08)
+      backdrop-filter: blur(10px)
+      color: #ffffff
+      font-size: 12px
+      padding: 5px 6px
+      display: flex
+      align-items: center
+      line-height: normal
+    &-number
+      font-size: 26px
+      font-weight: 700
+      margin-right: 3px
+    &-bot
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%  
+  &__mini
+    padding-bottom: 23px
+    margin-bottom: 20px
+    border-bottom: 1px solid $btn-color
+    display: inline-block
+    .article__big-img
+      width: 240px
+      height: 145px
+    .article__big-title
+      width: calc(100% - 240px)
+    &-top
+      display: flex
+      justify-content: space-between
+      width: 100%
+      max-width: 170px
+      font-size: 13px
+      margin-bottom: 12px
+    &-data
+      color: #8A8A8A
+      padding-right: 34px
+      border-right: 1px solid #4D4D4D
+      margin-right: 14px
+    h3
+      font-size: 17px
+      font-weight: 700
+      margin-bottom: 15px
+      position: relative
+      padding-right: 26px
+      max-width: fit-content
+      &::after
+        position: absolute
+        content: ''
+        width: 14px
+        height: 16px
+        background-image: url(../img/article.svg)
+        right: 0
+        top: 0
+        background-position: center center
+        background-size: contain
+        cursor: pointer
+    &-wrap
+      display: flex
+      justify-content: space-between
+      .article__mini
+        width: 48%
+    p
+      font-size: 12px
+      color: #8A8A8A
+    img
+      width: 240px
+      height: 145px
+      margin-bottom: 15px
+.article__big-mini
+  .article__big-img
+    width: 240px
+    height: 145px
+  h3
+    font-size: 17px
+    font-weight: 700
+    margin-bottom: 15px
+    position: relative
+    padding-right: 26px
+    max-width: fit-content
+  .article__big-title
+    width: calc(100% - 240px)
+
+.bookmarks__wrap
+  background-color: #ffffff
+  padding: 20px 15px
+  border-radius: 10px
+.body__right
+  a
+    font-family: $roboto-font
+    color: #000000
+    text-decoration: underline
+    display: block
+    padding-bottom: 15px
+    margin-bottom: 15px
+    border-bottom: 1px solid #C4C4C4
+    font-size: 14px
+  a.btn
+    color: #ffffff
+    text-decoration: none
+    display: block
+    padding-bottom: 0
+    margin-bottom: 0
+    border-bottom: none
+    position: relative
+    font-size: 17px
+    font-weight: 400
+    display: inline-block
+    white-space: nowrap
+    padding: 15px
+    +mt(.3s)
+    border-radius: 10px
+    box-shadow: none
+    border: none
+    cursor: pointer
+    background-color: $btn-color
+    color: #ffffff
+    text-align: center
+    line-height: normal
+    width: 100%
+    text-transform: uppercase
+    opacity: 0.5
+    &.disabled
+      filter: grayscale(.7)
+      pointer-events: none
+    &:focus, &:active, &:hover
+      opacity: 0.8
+.right__title
+  display: flex
+  align-items: center
+  margin-bottom: 20px
+  font-family: $suisse-font
+  color: #000000
+  h4
+    font-size: 16px
+    letter-spacing: 0.02em
+    font-weight: 400
+    color: #000000
+  img
+    margin-right: 10px
+
+.right__wrap
+  margin-bottom: 60px
+  &:last-child
+    margin-bottom: 0
+
+
+.right__documents
+  font-family: $roboto-font
+  color: #000000
+  text-decoration: underline
+  display: block
+  padding-bottom: 15px
+  margin-bottom: 15px
+  border-bottom: 1px solid #C4C4C4
+  font-size: 14px
+  a
+    font-family: $roboto-font
+    color: #000000
+    text-decoration: underline
+    display: block
+    padding-bottom: 15px
+    margin-bottom: 0
+    border-bottom: none
+    font-size: 14px
+  .right__documents-bot
+    display: flex
+    justify-content: space-between
+    width: 100%
+    max-width: 130px
+    a
+      font-size: 13px
+      color: #818181
+      padding-bottom: 0
+
+
+
+
+
+@media (max-width:1270px)
+  
+
+
+@media (max-width:1199.98px)
+
+
+  
+@media (max-width: 992px)
+  .dfs
+
+@media (max-width:767.98px)
+ 
+
+@media (max-width:576px)
+ 
+@media (max-width:340px)
