@@ -1419,10 +1419,12 @@ template, [hidden] {
   margin: 0 9px 0 15px;
 }
 .about__btn {
-  margin: 0 4px 0 28px;
+  margin-right: 4px;
+  display: none;
 }
-.about__btn-last{
-  margin: -2px 0 0 28px;
+
+.active-list .about__btn{
+  display: block;
 }
 .about__btn a{
   font-family: "SuisseIntl", sans-serif;
@@ -1434,7 +1436,13 @@ template, [hidden] {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 }
-.about__btn-last a{
+.about__content:hover{
+  padding-right: 4px;
+}
+.active-list.about__content:hover{
+  padding-right: 0;
+}
+.about__content:hover a{
   font-family: "SuisseIntl", sans-serif;
   font-size: 12px;
   line-height: 13px;
@@ -1442,11 +1450,16 @@ template, [hidden] {
   color: #F38B3E;background-color: #fff;
   padding: 8px 36px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
+  border-radius: 10px;;
 }
-.about__list-last-one{
-  margin-top: -11px;
-  margin-left: 462px;
+.about__btn-hover a{
+  font-size: 0;
+}
+.active-list .about__btn-hover{
+  display: none;
+}
+.about__btn-hover a:hover{
+  font-size: 12px;
 }
 .panel {
   display: none;
