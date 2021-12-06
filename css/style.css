@@ -1400,6 +1400,7 @@ template, [hidden] {
 }
 .about__picture{
   margin-top: -6px;
+  margin-right: 15px;
 }
 .about__picture img{
   margin-right: -12px;
@@ -1416,7 +1417,7 @@ template, [hidden] {
   color: #F38B3E;
   font-size: 13px;
   font-weight: 400;
-  margin: 0 9px 0 15px;
+  margin: 0 9px 0 2px;
 }
 .about__btn {
   margin-right: 4px;
@@ -1646,7 +1647,24 @@ template, [hidden] {
 }
 
 
-
+.about__level-three{
+  padding-left: 25px;
+}
+.about__lighting-inner.about__lighting-inner-level-three::before{
+  left: 50px;
+}
+.about__level-four{
+  padding-left: 25px;
+}
+.about__lighting-inner.about__lighting-inner-level-four::before{
+  left: 75px;
+}
+.about__level-five{
+  padding-left: 25px;
+}
+.about__lighting-inner.about__lighting-inner-level-five::before{
+  left: 100px;
+}
 .tabs__content-border-three{
   max-width: 754px;
   border: 1px solid #C4C4C4;
