@@ -1356,12 +1356,13 @@ template, [hidden] {
   background-color: #F2F2F2;
   border-radius: 10px;
   margin-bottom: 10px;
-  padding: 12px 0 12px 25px;
+  padding: 12px 0 8px 25px;
   cursor: pointer;
   width: 730px;
   position: relative;
-  height: 37px;
+  min-height: 37px;
   color: #000000;
+  transition: all 0.7s;
 }
 .about__content::before{
   content: url(../img/about.svg);
@@ -1370,6 +1371,9 @@ template, [hidden] {
 }
 .about__content-inner{
   margin: 10px 0;
+}
+.panel-first{
+  padding-left: 25px;
 }
 .active-list,
 .about__content:hover,.about__content:hover span{
@@ -1401,9 +1405,12 @@ template, [hidden] {
 .about__picture{
   margin-top: -6px;
   margin-right: 15px;
+  display: flex;
 }
 .about__picture img{
   margin-right: -12px;
+  width: 23.71px;
+  height: 23.71px;
 }
 .about__list{
   display: flex;
