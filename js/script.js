@@ -6,7 +6,7 @@
 
 (function($) {
   $(function() {
-    $("ul.tabs__caption-one").on("click", "li:not(.active)", function() {
+    $("ul.tabs__caption-one.").on("click", "li:not(.active)", function() {
       $(this)
         .addClass("active")
         .siblings()
@@ -37,6 +37,30 @@
   });
 
 })(jQuery);
+
+
+var popup = document.getElementsByClassName("popup__search")
+var modal = document.getElementById("myModal");
+var button = document.getElementById("myBtn");
+var img = document.getElementsByClassName("close")[0];
+
+button.onclick = function() {
+  button.style.display = "none"
+  modal.style.display = "block"
+  img.style.display = "block"
+}
+img.onclick = function() {
+  modal.style.display = "none"
+  button.style.display = "block"
+}
+popup.onclick = function() {
+  button.style.display = "block"
+}
+window.onclick = function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
 
 
 var acc = document.getElementsByClassName("accordion");
